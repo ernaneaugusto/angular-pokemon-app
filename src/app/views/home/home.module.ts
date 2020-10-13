@@ -5,6 +5,7 @@ import { HomeComponent } from './home.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { BannerIntroComponent } from './banner-intro/banner-intro.component';
 import { SearchComponent } from './search/search.component';
+import { PokemonsListComponent } from './pokemons-list/pokemons-list.component';
 
 const ROUTE: Routes = [
   { path: '', component: HomeComponent }
@@ -16,6 +17,7 @@ const ROUTE: Routes = [
     BannerIntroComponent,
     SearchComponent,
     DashboardComponent,
+    PokemonsListComponent,
   ],
   imports: [
     CommonModule,

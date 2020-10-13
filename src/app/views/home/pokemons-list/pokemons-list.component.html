@@ -1,11 +1,11 @@
 <div class="row my-4" *ngIf="pokemons?.length > 0; else alertMessage">
-    <div class="col-lg-4 col-12 mb-4" *ngFor="let pokemon of pokemons">
+    <div class="col-md-4 col-6 mb-4" *ngFor="let pokemon of pokemons">
         <div class="card">
-            <div class="card-body text-center">
+            <div class="card-body text-center  p-2 p-md-4">
                 <img [src]="pokemon.imageUrl" [alt]="pokemon.name" [title]="pokemon.name" class="d-block mx-auto" />
-                <h2 class="lead my-3">{{ pokemon.name | uppercase }}</h2>
+                <h2 class="lead my-3 pokemon-name">{{ pokemon.name | uppercase }}</h2>
                 <hr>
-                <a [href]="pokemon.url" class="btn btn-info" title="Mais sobre {{pokemon.name}}">Ver mais</a>
+                <a [href]="pokemon.url" class="btn btn-info" title="Mais sobre {{pokemon.name}}">Ver mais <i class="fas fa-arrow-right ml-1 d-none d-md-inline-block"></i></a>
             </div>
         </div>
     </div>
